@@ -39,5 +39,10 @@ def sum_array(array)
 end
 
 def add_s(array)
-
+  array.each_with_index do |s, index|
+    if index != 1
+      s << "s"
+    end
+  end
+  array
 end
